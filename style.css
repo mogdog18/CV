@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #227ac7;
+    --text-color: #727171;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    background-color: #121213;
+    color: white;
+}
+/* common style */
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.spaced-bullets {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 1.5;
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+/* layouts */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #2d333b;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px){
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.group-1{
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+/* profile */
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+.profile_profileImg{
+    max-width: 250px;
+}
+.profile_name_firstname{
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;;
+}
+.profile_name_lastname{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.downloadBtn{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.downloadBtn:hover{
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px){
+    .profile_container {
+        flex-direction: column;
+    }
+}
+/* Other */
+.ref_item{
+    margin-top: 0.5rem;
+}
+.ref_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.ref_sub_name{
+    color: #727171;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: italic;
+}

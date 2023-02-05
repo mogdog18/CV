@@ -1,59 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Resume</title>
-    <style>
-      /* Add CSS styles here */
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>My Name</h1>
-      <p>My Job Title</p>
-      <p>My Contact Information</p>
-    </header>
-    <section>
-      <h2>Summary</h2>
-      <p>A brief overview of my skills and experience.</p>
-    </section>
-    <section>
-      <h2>Work Experience</h2>
-      <ul>
-        <li>
-          <h3>Job Title</h3>
-          <p>Company Name</p>
-          <p>Job Description</p>
-        </li>
-        <li>
-          <h3>Job Title</h3>
-          <p>Company Name</p>
-          <p>Job Description</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <h3>Degree</h3>
-          <p>University Name</p>
-          <p>Graduation Date</p>
-        </li>
-        <li>
-          <h3>Degree</h3>
-          <p>University Name</p>
-          <p>Graduation Date</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-      </ul>
-    </section>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <div class="container">
+    <div class="profile">
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <img src="./images/1652604388689.jpeg" alt="Anna Midgley">
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstname">Anna</span>
+            <span class="profile_name_lastname">Midgley</span>
+          </h1>
+          <p class="profile_title"> Harvard CSE Master's Student </p>
+          <p class="description">
+            A driven individual interested in applying innovative solutions to real-word problems & extracting value from data
+          </p>
+          <a class="downloadBtn", href="./cv.pdf" download="AMidgley_CV.pdf"> Download CV </a>
+        </div>
+      </div>
+    </div>
+    <div class="group-1">
+      <div class="skills">
+        <h3 class="title">Education</h3>
+          <div class="ref_item">
+          <h4 class="ref_name">Harvard University</h4>
+          <h5 class="ref_sub_name">Master’s of Engineering in Computational Science & Engineering - Cumulative GPA: 4.0</h5>
+          <ul class="spaced-bullets description">
+            <li> Relevant Coursework: Advanced Scientific Computing - Numerical Methods, Systems Development for
+Computational Science, Bayesian Inference, Machine Learning (MIT) </li>
+          </ul>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name">University of Cape Town</h4>
+          <h5 class="ref_sub_name">Bachelor of Science in Chemical Engineering - First Class Honours</h5>
+          <ul class="spaced-bullets description">
+            <li> Class medal for overall top-performing student with the highest GPA </li>
+            <li> Relevant Coursework: Numerical Simulation, Numerical Optimization, Vector Calculus, Linear Algebra and
+Differential Equations, Statistical Design & Data Analysis </li>
+          </ul>
+        </div>
+        <h3 class="title">Experience</h3>
+        <div class="ref_item">
+          <h4 class="ref_name">DataProphet</h4>
+          <h5 class="ref_sub_name">Data Scince Intern</h5>
+          <ul class="spaced-bullets description">
+            <li> DataProphet is an AI-as-a-Service company that specialize in machine learning optimization of manufacturing
+processes, recognized by the World Economic Forum as both a Technology Pioneer and a Global Innovator.</li>
+            <li> Designed a general variational autoencoder module to be used by the technical team.</li>
+          </ul>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name">Boston Consulting Group</h4>
+          <h5 class="ref_sub_name">Visiting Associate</h5>
+          <ul class="spaced-bullets description">
+            <li> Designed a 5-year strategy with a team for a global chemicals and energy company to improve their retail trade
+sector</li>
+          </ul>
+        </div>
+          <h3 class="title">Projects</h3>
+        <div class="ref_item">
+          <h4 class="ref_name">JAXED-UP Optimization of the Carbon Dioxide to Methanol Process - Undergraduate Thesis</h4>
+          <ul class="spaced-bullets description">
+            <li> Demonstrated that JAX, a Python library developed by Deepmind, can be used to improve process optimization,
+leading to better optimals being found using the carbon dioxide to methanol process as an example problem.</li>
+          </ul>
+        </div>
+        <h3 class="title">Funding & Awards</h3>
+          <div class="ref_item">
+          <h4 class="ref_name">Skye Scholarship</h4>
+          <ul class="spaced-bullets description">
+            <li> Scholarship awarded for academic excellence for postgraduate studies at Harvard University.</li>
+          </ul>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name">Gold Malan Chemical Engineering Medal</h4>
+          <ul class="spaced-bullets description">
+            <li> Awarded to the best student in the undergraduate degree program at the University of Cape Town.</li>
+          </ul>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name">Vice Chancellor’s Scholarship</h4>
+          <ul class="spaced-bullets description">
+            <li> Scholarship awarded to the top 10 applicants to the University of Cape Town. </li>
+          </ul>
+        </div>
+          <h3 class="title">Skills</h3>
+          <ul class="spaced-bullets description">
+            <li> <b>Languages:</b> Python (JAX, Tensorflow, Scikit-Learn, Pandas), R, SciLab </li>
+              <li> <b>Tools:</b> Git, LATEX, Linux/Unix, </li>
+          </ul>
+      </div>
+    </div>
+    <div class="group-3"></div>
+  </div>
 </html>
-
