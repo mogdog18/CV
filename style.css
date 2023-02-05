@@ -54,7 +54,7 @@ a{
     padding: 5rem;
     background: #2d333b;
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 2rem;
 }
 @media only screen and (max-width: 768px){
     .container {
@@ -66,7 +66,7 @@ a{
 }
 .profile{
     grid-column: 1 / -1;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 .group-1{
     display: flex;
